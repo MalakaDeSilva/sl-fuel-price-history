@@ -26,10 +26,10 @@ app.use(
 );
 
 // Use the routes
+app.use("/api", dataRoutes);
 app.use("/", (req, res) => {
   res.status(200).json({ status: "UP", docs: "{host}/docs" });
 });
-app.use("/api", dataRoutes);
 
 // Export the serverless function
 module.exports = app;
