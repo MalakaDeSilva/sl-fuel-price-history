@@ -25,7 +25,7 @@ const CSS_URL =
 app.use(
   "/docs",
   swaggerUi.serve,
-  swaggerUi.setup(swaggerDocs, { customCss: CSS_URL })
+  swaggerUi.setup(swaggerDocs, { customCssUrl: CSS_URL })
 );
 
 // Use the routes
