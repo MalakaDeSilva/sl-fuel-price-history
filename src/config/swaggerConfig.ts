@@ -1,6 +1,9 @@
 // src/config/swaggerConfig.ts
 import { Options } from "swagger-jsdoc";
 
+export const CSS_URL =
+  "https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/4.1.0/swagger-ui.min.css";
+
 // Swagger configuration options
 const swaggerOptions: Options = {
   definition: {

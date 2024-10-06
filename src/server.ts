@@ -3,7 +3,7 @@ import cors from "cors";
 import dataRoutes from "./routes/dataRoute";
 import swaggerUi from "swagger-ui-express";
 import swaggerJsdoc from "swagger-jsdoc";
-import swaggerOptions from "./config/swaggerConfig";
+import swaggerOptions, { CSS_URL } from "./config/swaggerConfig";
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -19,8 +19,6 @@ app.use(
 
 // Swagger setup
 const swaggerDocs = swaggerJsdoc(swaggerOptions);
-const CSS_URL =
-  "https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/5.17.14/swagger-ui.js";
 
 app.use(
   "/docs",
